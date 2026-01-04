@@ -1,0 +1,43 @@
+---
+title: Authentication System Explanation (Auth)
+description: Explanation of authentication methods and permission levels for background management interfaces
+---
+
+## Explanation
+
+Background management interfaces adopt a multi-level authentication mechanism, commonly: **Public**, **User**, **Admin**, **Root**.
+
+## Authentication Methods (Choose One)
+
+### Session
+
+Obtain Session through the login interface:
+
+- `POST /api/user/login`
+
+### Access Token (Recommended)
+
+Carry in the request header:
+
+```text
+Authorization: Bearer {token}
+```
+
+Tokens can be generated in "Personal Settings - Security Settings - System Access Tokens".
+
+## Required Request Headers
+
+Some interfaces require carrying a user identification request header:
+
+```text
+New-Api-User: {user_id}
+```
+
+Where `{user_id}` must match the current logged-in user.
+
+## Permission Levels
+
+- **Public**: No authentication required
+- **User**: Requires login or Access Token
+- **Admin**: Requires administrator privileges
+- **Root**: Highest privilege
