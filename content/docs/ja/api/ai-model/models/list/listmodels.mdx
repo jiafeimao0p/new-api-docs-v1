@@ -1,0 +1,29 @@
+---
+title: ネイティブOpenAIフォーマット
+full: true
+_openapi:
+  method: GET
+  toc: []
+  structuredData:
+    headings: []
+    contents:
+      - content: |
+          現在利用可能なモデルのリストを取得します。
+
+          リクエストヘッダーに基づいて、返されるフォーマットを自動的に識別します。
+          - `x-api-key` および `anthropic-version` ヘッダーが含まれる場合、Anthropic フォーマットを返します。
+          - `x-goog-api-key` ヘッダーまたは `key` クエリパラメーターが含まれる場合、Gemini フォーマットを返します。
+          - その他の場合、OpenAI フォーマットを返します。
+---
+
+{/* このファイルはFumadocsによって生成されました。このファイルを直接編集しないでください。変更を加える場合は、再度生成コマンドを実行してください。 */}
+
+現在利用可能なモデルのリストを取得します。
+
+リクエストヘッダーに基づいて、返されるフォーマットを自動的に識別します。
+- `x-api-key` および `anthropic-version` ヘッダーが含まれる場合、Anthropic フォーマットを返します。
+- `x-goog-api-key` ヘッダーまたは `key` クエリパラメーターが含まれる場合、Gemini フォーマットを返します。
+- その他の場合、OpenAI フォーマットを返します。
+
+
+<APIPage document={"openapi/generated/ai-model/模型（Models）/列出模型/get-v1-models-listmodels-383826468.json"} operations={[{"path":"/v1/models","method":"get"}]} />
