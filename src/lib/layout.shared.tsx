@@ -45,7 +45,7 @@ export const linkItems: LinkItemType[] = [
 
 export const logo = (
   <Image
-    alt="New API"
+    alt="1API"
     src="/assets/newapi.svg"
     width={20}
     height={20}
@@ -63,7 +63,7 @@ export function baseOptions(locale: string): BaseLayoutProps {
         <>
           {logo}
           <span className="font-medium in-[header]:text-[15px] [.uwu_&]:hidden">
-            New API
+            1API
           </span>
         </>
       ),
