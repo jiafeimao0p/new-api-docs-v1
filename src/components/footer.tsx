@@ -145,7 +145,7 @@ const translations: Record<string, FooterTranslation> = {
       relatedProjects: '相关项目',
       friendshipLinks: '友情链接',
     },
-    copyright: '© 2025 锟腾科技. All Rights Reserved.',
+    copyright: '© 2025 1API 中转站. All Rights Reserved.',
   },
   en: {
     sections: {
@@ -164,7 +164,7 @@ const translations: Record<string, FooterTranslation> = {
       relatedProjects: 'Related Projects',
       friendshipLinks: 'Friendship Links',
     },
-    copyright: '© 2025 QuantumNous. All Rights Reserved.',
+    copyright: '© 2025 1API. All Rights Reserved.',
   },
   ja: {
     sections: {
@@ -183,7 +183,7 @@ const translations: Record<string, FooterTranslation> = {
       relatedProjects: '関連プロジェクト',
       friendshipLinks: '友好リンク',
     },
-    copyright: '© 2025 QuantumNous. All Rights Reserved.',
+    copyright: '© 2025 1API. All Rights Reserved.',
   },
 };
 
