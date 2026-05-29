@@ -1,89 +1,93 @@
-﻿---
+---
 title: 快速开始
-description: 选择最适合您需求的部署方式
+description: 1API 中转站 - 统一 API 接口，连接主流 AI 模型
 ---
 
 import {
   Server,
   Network,
   Code2,
-  Headphones,
   Bot,
-  Handshake,
-  Container,
-  Boxes,
+  Key,
+  Zap,
 } from 'lucide-react';
 
-## 部署方式选择
+## 欢迎使用 1API 中转站
 
-根据您的环境和技术要求选择合适的部署方式。
+**1API** 是一个基于 New API 构建的 AI 模型中转服务，支持将各类大语言模型聚合管理，并以 OpenAI、Claude、Gemini 兼容接口对外分发。
 
-<Cards>
-  <Card
-    icon={<Boxes />}
-    title="Docker Compose 部署"
-    description="使用 Docker Compose 编排多个服务，适合生产环境或需要 MySQL、Redis 等依赖的场景。"
-    href="/zh/docs/installation/deployment-methods/docker-compose-installation"
-  />
-  <Card
-    icon={<Container />}
-    title="Docker 单容器部署"
-    description="使用 Docker 镜像快速部署 New API，适合个人使用或小规模应用场景。"
-    href="/zh/docs/installation/deployment-methods/docker-installation"
-  />
-  <Card
-    icon={<Server />}
-    title="1Panel 面板部署"
-    description="通过 1Panel 面板图形化界面快速部署，适合不熟悉命令行的用户。"
-    href="/zh/docs/installation/deployment-methods/1panel-installation"
-  />
-  <Card
-    icon={<Server />}
-    title="宝塔面板部署"
-    description="通过宝塔面板图形化界面快速部署，适合不熟悉命令行的用户。"
-    href="/zh/docs/installation/deployment-methods/bt-docker-installation"
-  />
-  <Card
-    icon={<Network />}
-    title="集群部署模式"
-    description="多节点分布式部署，实现高可用、负载均衡和水平扩展，适合大规模应用和企业级场景。"
-    href="/zh/docs/installation/deployment-methods/cluster-deployment"
-  />
-  <Card
-    icon={<Code2 />}
-    title="本地开发部署"
-    description="适合开发者进行代码贡献和功能定制，提供完整的本地开发环境设置指南。"
-    href="/zh/docs/installation/deployment-methods/local-development"
-  />
-</Cards>
+<div className="bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
+  <p className="text-sm text-blue-800 dark:text-blue-200">
+    <strong>服务地址：</strong> <code>http://ctoai.xyz</code> · API Base URL：<code>http://ctoai.xyz/v1</code>
+  </p>
+</div>
 
-## 浏览我们的文档
-
-探索全面的指南和资源，充分利用 New API 的强大功能。
+## 快速开始
 
 <Cards>
   <Card
-    icon={<Code2 />}
-    title="接口文档"
-    description="全面的 API 接口说明和调用示例。"
-    href="/zh/docs/api"
+    icon={<Key />}
+    title="获取 API Key"
+    description="登录后创建你的 API Key，用于调用所有支持的模型。"
+    href="/zh/docs/guide/console/api-token"
+  />
+  <Card
+    icon={<Zap />}
+    title="在线测试"
+    description="使用内置操练场，无需编写代码即可直接测试模型。"
+    href="/zh/docs/guide/feature-guide/user/api"
   />
   <Card
     icon={<Bot />}
+    title="配置客户端"
+    description="兼容 Cherry Studio、Lobe Chat、OpenCat 等主流 AI 客户端。"
+    href="/zh/docs/apps"
+  />
+</Cards>
+
+## 为什么选择 1API？
+
+<Cards>
+  <Card
+    icon={<Network />}
+    title="多渠道管理"
+    description="支持配置多个上游通道，自动负载均衡，故障自动切换。"
+  />
+  <Card
+    icon={<Code2 />}
+    title="多格式兼容"
+    description="同时支持 OpenAI、Claude Messages、Google Gemini 等多种接口格式。"
+  />
+  <Card
+    icon={<Server />}
+    title="稳定可靠"
+    description="内置智能路由和自动重试机制，保障服务连续性。"
+  />
+</Cards>
+
+## 支持的模型类型
+
+| 类型 | 说明 |
+| --- | --- |
+| 聊天补全 | GPT-4o、Claude 3.5、Gemini 1.5、DeepSeek V3、Qwen 等 |
+| 向量嵌入 | text-embedding-3、voyage 系列等 |
+| 图像生成 | DALL-E、Flux、Midjourney、即梦、可灵等 |
+| 语音处理 | Whisper、TTS、Audio 等 |
+| 实时对话 | OpenAI Realtime API 兼容 |
+
+## 浏览文档
+
+<Cards>
+  <Card
+    icon={<Bot />}
     title="AI 应用"
-    description="探索基于 New API 开发的各类 AI 应用示例。"
+    description="支持的客户端应用列表和配置方法。"
     href="/zh/docs/apps"
   />
   <Card
-    icon={<Headphones />}
-    title="帮助支持"
-    description="常见问题解答和社区交流。"
-    href="/zh/docs/support"
-  />
-  <Card
-    icon={<Handshake />}
-    title="商务合作"
-    description="与我们合作，共同开拓 AI 生态与商业机会。"
-    href="/zh/docs/business"
+    icon={<Zap />}
+    title="常见问题"
+    description="常见问题解答和使用技巧。"
+    href="/zh/docs/support/faq"
   />
 </Cards>
